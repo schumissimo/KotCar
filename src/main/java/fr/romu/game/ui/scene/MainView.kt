@@ -10,6 +10,9 @@ class MainView : View("KotCar") {
     val next : Button by fxid()
 
     init{
-        next.text = "Circuit Scene"
+    }
+
+    fun handlNexteAction(){
+        replaceWith(Circuit::class)
     }
 }
